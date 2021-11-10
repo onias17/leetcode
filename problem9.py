@@ -30,4 +30,26 @@ Constraints:
 -231 <= x <= 231 - 1
 '''
 
+# SOLUTION 1
+def isPalindrome(num):
+    return str(num) == str(num)[::-1]
 
+print(isPalindrome(-123))
+
+# SOLUTION 2
+def isPalindrome1(num):
+    return num
+    # split = [int(x) for x in str(x)]
+    # print(split)
+    # rev = split.reverse()
+    # print(rev)
+    # str1 = ''.join(str(i) for i in split)
+    # print(str1)
+    # if x < 0:
+    #     return False
+    # elif x == str1:
+    #     return True
+    # else:
+    #     return False
+
+print(isPalindrome1(-123))
