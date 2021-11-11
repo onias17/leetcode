@@ -38,18 +38,13 @@ print(isPalindrome(-123))
 
 # SOLUTION 2
 def isPalindrome1(num):
-    return num
-    # split = [int(x) for x in str(x)]
-    # print(split)
-    # rev = split.reverse()
-    # print(rev)
-    # str1 = ''.join(str(i) for i in split)
-    # print(str1)
-    # if x < 0:
-    #     return False
-    # elif x == str1:
-    #     return True
-    # else:
-    #     return False
+    str1 = str(num)
+    print(str1)
+    str2 = str1[::-1]
+    print(str2)
+    if str1 == str2:
+        return True
+    else:
+        return False
 
-print(isPalindrome1(-123))
+print(isPalindrome1(202))
