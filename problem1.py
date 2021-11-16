@@ -37,3 +37,5 @@ def twoSum(nums, target):
             return [d[n], i]
         else:
             d[target - n] = i
+
+print(twoSum([5,1,8,9], 10))
